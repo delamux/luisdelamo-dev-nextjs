@@ -6,13 +6,17 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "build:base-css": "tailwindcss build ./styles/tailwind.base.css -o ./styles/base.css"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "@emotion/css": "^10.0.27",
-    "@emotion/react": "^11.0.0-rc.0",
     "@emotion/styled": "^10.0.27",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@material-ui/core": "^4.11.0",
+    "emotion": "^10.0.27",
+    "emotion-server": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "next": "latest",
     "react": "^16.13.1",
@@ -20,15 +24,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@emotion/babel-plugin": "^11.0.0-rc.0",
-    "@tailwindcss/ui": "^0.6.2",
-    "@tailwindcssinjs/macro": "^0.17.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "babel-plugin-emotion": "^10.0.33",
-    "babel-plugin-macros": "^2.8.0",
-    "tailwindcss": "^1.9.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "gh-pages": "^3.1.0",
     "typescript": "4.0"
   },
   "license": "MIT"

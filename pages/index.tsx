@@ -1,17 +1,11 @@
-import Link from "next/link";
+import React from 'react';
 import Layout from "../components/Layout";
-import { styled, media } from "../theme";
+import { styled, media } from "theme";
 import { css, keyframes } from "@emotion/core";
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <Header>Hello Next.js 👋</Header>
-    <Header variant="secondary">Hello Luis del Amo 🤓</Header>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+  <Layout title="luisdelamo.dev" >
+    <Header> Luis del amo </Header>
   </Layout>
 );
 
@@ -34,13 +28,13 @@ const bounce = keyframes`
 `;
 
 const bouncy = css`
-  animation: ${bounce} 1s ease infinite;
+  animation: ${bounce} 1s ease;
 `;
 
 const Header = styled.h1<{ variant?: "primary" | "secondary" }>`
   text-align: center;
   color: ${({ theme, variant }) =>
-    variant === "secondary" ? theme.colors.secondary : theme.colors.primary};
+    variant === "secondary" ? theme.colors.secondary.light : theme.colors.secondary.main};
   ${({ variant }) => variant === "secondary" && bouncy};
   border: 1px solid black;
   ${media.giant`padding: 100px;border-color: red`};

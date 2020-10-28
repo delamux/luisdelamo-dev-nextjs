@@ -1,6 +1,6 @@
 {
-  "presets": ["next/babel"],
-  "plugins": ["macros", "@emotion/babel-plugin",
+  "presets": ["next/babel", "@babel/preset-typescript"],
+  "plugins": ["@babel/plugin-proposal-optional-chaining",
     [
       "emotion",
       {
@@ -9,6 +9,16 @@
         "autoLabel": true,
         "labelFormat": "[local]",
         "cssPropOptimization": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "shared": "./shared",
+          "theme": "./theme"
+        }
       }
     ]
   ]

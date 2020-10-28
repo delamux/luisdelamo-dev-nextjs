@@ -3,8 +3,35 @@ import { css, SerializedStyles } from "@emotion/core";
 
 export const theme = {
   colors: {
-    primary: "lightcoral",
-    secondary: "purple",
+    primary: {
+      light: "#33dac1",
+      main: "##00D1B2",
+      dark: "#00927c",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#538091",
+      main: "#286176",
+      dark: "#1c4352",
+      contrastText: "#000",
+    },
+    body: css`
+      background-image: linear-gradient(
+        to left top,
+        #00d1b2,
+        #48d8aa,
+        #6bdfa2,
+        #89e59c,
+        #a4ea96,
+        #a7e28b,
+        #a9db81,
+        #abd378,
+        #96be65,
+        #82aa51,
+        #6e963f,
+        #5b822c
+      );
+    `,
   },
 };
 
