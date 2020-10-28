@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React, { Component } from 'react';\nexport default class Footer extends Component {\n  render() {\n    return __jsx(\"div\", null, __jsx(\"footer\", null, __jsx(\"hr\", null), __jsx(\"span\", null, \"I'm here to stay (Footer)\")));\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
