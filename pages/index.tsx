@@ -6,6 +6,7 @@ import { css, keyframes } from "@emotion/core";
 const IndexPage = () => (
   <Layout title="luisdelamo.dev" >
     <Header> Luis del amo </Header>
+    <Header variant="secondary"> Luis del amo </Header>
   </Layout>
 );
 

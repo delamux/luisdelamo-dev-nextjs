@@ -14,7 +14,7 @@ jobs:
       - name: Use SSH key
         run: |
           mkdir -p ~/.ssh/
-          echo "${{secrets.MAQUINA_DEPLOY}}" > ~/.ssh/id_rsa
+          echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
           sudo chmod 600 ~/.ssh/id_rsa
       - name: Git config
         run: |
@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        run: npm run deploy -- -r git@github.com:delamux/cloud-module-lemon.git
+        run: npm run deploy -- -r git@github.com:delamux/luisdelamo-dev-nextjs.git
